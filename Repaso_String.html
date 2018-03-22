@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<script>
+    var cadena = prompt("Dime una frase");
+</script>
+
+</body>
+
+<script>
+    var patron = /[A-Z]/g;
+    var patron2 = /[a-z]/g;
+    document.write("Las mayusculas son" + cadena.match(patron));
+    document.write("Las minusculas son" + cadena.match(patron2));
+</script>
+
+</html>

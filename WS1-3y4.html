@@ -1,0 +1,34 @@
+<!-- Tema 2 ejercicio 3y4 -->
+
+<html>
+
+<head>
+
+    <script language="javascript">
+        var segundos = 60;
+
+        function tiempo() {
+            var t = setTimeout("tiempo()", 1000);
+            document.getElementById('contenedor').innerHTML = 'Será redireccionado en ' + segundos-- + " segundos.";
+            if (segundos == 0) {
+                window.location.href = 'http://www.google.es';
+
+                clearTimeout(t);
+            }
+        }
+
+        tiempo()
+    </script>
+
+</head>
+
+<body>
+
+<div id="contenedor" style="text-align: center" ></div>
+
+</body>
+
+
+</html>
+
+

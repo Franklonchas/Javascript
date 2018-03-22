@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function imagenAleatoria() {
+            var i = Math.floor(Math.random() * 3);
+
+            if (i == 0) {
+                document.getElementById("imagen").src = "https://cdn.pixabay.com/photo/2016/02/05/15/12/one-1181083_960_720.png";
+            }
+            if (i == 1) {
+                    document.getElementById("imagen").src = "https://cdn.pixabay.com/photo/2016/02/05/15/12/two-1181082_960_720.png";
+            }
+            if (i == 2) {
+                document.getElementById("imagen").src = "https://cdn.pixabay.com/photo/2016/02/05/15/12/three-1181081_960_720.png";
+            }
+        }
+        window.onload = imagenAleatoria;
+    </script>
+</head>
+<body>
+
+<img id="imagen">
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var cadena = prompt("Dime una frase");
+    var letra = prompt("Dime una letra para buscar");
+
+</script>
+
+</body>
+
+<script>
+    var patron = letra;
+    var cont = 0;
+    var i = 0;
+    for (i; i < cadena.length; i++) {
+        if (cadena.match(patron) != null) {
+            cont++;
+        } else
+            console.log("nanai");
+    }
+    document.write("La letra " + cadena.match(patron) + " se repite " + cont + " veces");
+
+</script>
+
+</html>

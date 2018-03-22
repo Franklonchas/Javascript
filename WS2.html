@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WS2</title>
+</head>
+<body>
+<div id="a"></div>
+<div id="b"></div>
+<div id="c">
+
+    <script language="JavaScript">
+        var numero_1 = parseInt(prompt("Dime un numero"));
+        var numero_2 = parseInt(prompt("Dime otro numero"));
+
+    </script>
+
+</div>
+
+</body>
+
+<script>
+    document.getElementById("a").innerHTML = Math.floor(Math.random() * 2);
+    document.getElementById('b').innerHTML = Math.floor(Math.random() * (201 - 100)) + 100;
+    document.getElementById('c').innerHTML = Math.floor(Math.random() * ((numero_2 + 1) - numero_1)) + numero_1;
+</script>
+</html>
