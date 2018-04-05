@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Captura de audio y video</title>
+
+    <script>
+
+        navigator.permissions.query({name: 'camera'}).then(function (result) {
+            if (result.state == 'granted') {
+
+            } else if (result.state == 'prompt') {
+
+            } else if (result.state == 'denied') {
+
+            }
+            result.onchange = function () {
+
+            };
+        });
+
+        navigator.permissions.query({name: 'microphone'}).then(function (result) {
+            if (result.state == 'granted') {
+
+            } else if (result.state == 'prompt') {
+
+            } else if (result.state == 'denied') {
+
+            }
+            result.onchange = function () {
+
+            };
+        });
+    </script>
+
+</head>
+<body>
+<audio id="player" controls></audio>
+<video id="player2" controls></video>
+
+</body>
+<script>
+    var player = document.getElementById('player');
+
+    var handleSuccess = function (stream) {
+        if (window.URL) {
+            player.src = window.URL.createObjectURL(stream);
+        } else {
+            player.src = stream;
+        }
+    };
+
+    navigator.mediaDevices.getUserMedia({audio: true, video: false})
+        .then(handleSuccess)
+</script>
+<script>
+    var player = document.getElementById('player2');
+
+    var handleSuccess = function (stream) {
+        player.srcObject = stream;
+    };
+
+    navigator.mediaDevices.getUserMedia({audio: true, video: true})
+        .then(handleSuccess)
+</script>
+</html>

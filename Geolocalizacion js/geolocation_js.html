@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Geolocalizacion JavaScript</title>
+
+
+    <script language="javascript">
+        navigator.geolocation.watchPosition(function (position) {
+                console.log("Estas siendo rastreado, has aceptado ser rastreado.");
+            },
+            function (error) {
+                if (error.code == error.PERMISSION_DENIED)
+                    console.log("No puedo saber donde estas, me has bloqueado");
+            });
+    </script>
+
+    <script language="javascript">
+        var posiAnt = undefined;
+        var mapa;
+        var crd;
+
+        function initMap() {
+            var optiones = {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            };
+
+            navigator.geolocation.watchPosition(ok, error, optiones);
+        }
+
+        function ok(pos) {
+            crd = pos.coords;
+            var distTotal = 0;
+
+            if (posiAnt === undefined)
+                posiAnt = crd;
+
+            console.log('Tu posicion actual es:');
+            console.log('Latitud : ' + crd.latitude);
+            console.log('Longitud: ' + crd.longitude);
+            console.log('Mas o menos ' + crd.accuracy + ' metros de exactitud.');
+
+            var x1 = new google.maps.LatLng(crd.latitude, crd.longitude);
+            var x2 = new google.maps.LatLng(posiAnt.latitude, posiAnt.longitude);
+            posiAnt = crd;
+            var distancia = google.maps.geometry.spherical.computeDistanceBetween(x1, x2);
+            distTotal += distancia;
+            console.log('La distancia que te has movido es ' + distTotal);
+
+            var sitio = {lat: crd.latitude, lng: crd.longitude};
+            mapa = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: sitio
+            });
+            var marker = new google.maps.Marker({
+                position: sitio,
+                map: mapa
+            });
+        };
+
+        function geoInversa() {
+            var geocoder = new google.maps.Geocoder;
+            var latlng = {lat: crd.latitude, lng: crd.longitude};
+            geocoder.geocode({'location': latlng}, function (results, status) {
+                if (status === 'OK') {
+                    if (results[1]) {
+                        mapa.setZoom(11);
+                        var marker = new google.maps.Marker({
+                            position: latlng,
+                            map: mapa
+                        });
+                    }
+                    console.log(results[1]);
+                }
+            })
+        }
+
+        function error(error) {
+            console.warn('ERROR(' + error.code + '): ' + error.message);
+        };
+
+
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYMuprswO6DZ4WB9oTRAyrpH-qLDWeVSs&libraries=geometry&callback=initMap"
+            type="text/javascript"></script>
+    <style>
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+<div>
+    <input type="button" onclick="geoInversa()" , value="Geolocalización Inversa!!">
+</div>
+
+</body>
+
+
+</html>
