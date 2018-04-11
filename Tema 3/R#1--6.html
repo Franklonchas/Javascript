@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R#1--6</title>
+
+    <script>
+        var cadena = "es una prueba";
+
+        function invertir(cadena) {
+            var acum = "";
+            for (var i = cadena.length -1; i >=0; i--) {
+                acum += cadena[i];
+            }
+            return acum;
+        }
+
+        function aux() {
+            console.log(invertir(cadena));
+        }
+    </script>
+
+</head>
+<body>
+El resultado saldrá por consola. La cadena por defecto es "Es una prueba".
+<input type="button" onclick="aux()" value="Invierte la cadena">
+</body>
+</html>

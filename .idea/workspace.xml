@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f56500f-6de2-428f-9c92-aa70731c0718" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Tema 3/R#1--4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tema 3/WS1-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema 3/R#1--4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tema 3/R#1--4.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="WS1-2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tema 3/WS1-2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -36,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="R#1--4.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="R#1--4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tema 3/R#1--4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="R#1--6.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tema 3/R#1--6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -84,6 +91,7 @@
         <option value="$PROJECT_DIR$/Tema 3/WS1-2.html" />
         <option value="$PROJECT_DIR$/Tema 3/WS1-3.html" />
         <option value="$PROJECT_DIR$/Tema 3/R#1--4.html" />
+        <option value="$PROJECT_DIR$/Tema 3/R#1--6.html" />
       </list>
     </option>
   </component>
@@ -93,7 +101,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="200" />
     <option name="y" value="-10" />
     <option name="width" value="1390" />
@@ -174,15 +182,15 @@
       <workItem from="1522952270601" duration="76000" />
       <workItem from="1522952570649" duration="3615000" />
       <workItem from="1522997648529" duration="53000" />
-      <workItem from="1523428428856" duration="1478000" />
+      <workItem from="1523428428856" duration="2706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11577000" />
+    <option name="totallyTimeSpent" value="12805000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-7" width="1486" height="878" extended-state="7" />
+    <frame x="58" y="-7" width="1486" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13315217" />
@@ -359,10 +367,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tema 3/WS1-2.html">
+    <entry file="file://$PROJECT_DIR$/Tema 3/R#1--4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -373,10 +381,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tema 3/R#1--4.html">
+    <entry file="file://$PROJECT_DIR$/Tema 3/WS1-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tema 3/R#1--6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
