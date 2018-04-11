@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WS2--1</title>
+
+    <script>
+
+        var alumno1 = new Array(4);
+        alumno1[0] = "Francisco Javier Sánchez de la Torre";
+        alumno1[1] = 22;
+        alumno1[2] = 5;
+        alumno1[3] = 7;
+        alumno1[4] = 8;
+
+        var alumno2 = new Array(4);
+        alumno2[0] = "Sergio Suárez Garzón";
+        alumno2[1] = 20;
+        alumno2[2] = 6;
+        alumno2[3] = 6;
+        alumno2[4] = 9;
+
+        var alumno3 = new Array(4);
+        alumno3[0] = "Miguel Angel Torres Varo";
+        alumno3[1] = 21;
+        alumno3[2] = 8;
+        alumno3[3] = 7;
+        alumno3[4] = 10;
+
+        var alumnos = new Array(2);
+        alumnos[0] = alumno1;
+        alumnos[1] = alumno2;
+        alumnos[2] = alumno3;
+
+
+        function mostrarNota(numero, nota) {
+            var nota = alumnos[numero][nota];
+            return nota;
+        }
+
+        function edadMedia() {
+            var acum = 0;
+            var j = 0;
+
+            var edadMedia;
+            for (var i = 0; i <= alumnos.length - 1; i++) {
+                acum += alumnos[i][1];
+                j++;
+            }
+            edadMedia = acum / j;
+            return edadMedia;
+        }
+
+        function aux() {
+            console.log("La edad media de los estudiantes es: " + edadMedia());
+        }
+
+    </script>
+
+</head>
+<body>
+Los resultados saldran por consola.
+<input type="button" onclick="aux()" value="Calcula la edad media">
+</body>
+</html>
