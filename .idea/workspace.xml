@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f56500f-6de2-428f-9c92-aa70731c0718" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Tema 3/R#1--4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tema 3/WS1-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,26 +17,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="geolocation_js1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
+    <leaf>
+      <file leaf-file-name="WS1-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tema 3/WS1-2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="audioyvideojs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audio y video js/audioyvideojs.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="WS1-3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tema 3/WS1-3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="prueba.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Audio y video js/prueba.html">
+      <file leaf-file-name="R#1--4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tema 3/R#1--4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -74,6 +80,10 @@
         <option value="$PROJECT_DIR$/Audio y video js/audioyvideojs.html" />
         <option value="$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
         <option value="$PROJECT_DIR$/Audio y video js/prueba.html" />
+        <option value="$PROJECT_DIR$/Tema 3/WS1.html" />
+        <option value="$PROJECT_DIR$/Tema 3/WS1-2.html" />
+        <option value="$PROJECT_DIR$/Tema 3/WS1-3.html" />
+        <option value="$PROJECT_DIR$/Tema 3/R#1--4.html" />
       </list>
     </option>
   </component>
@@ -83,11 +93,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="200" />
     <option name="y" value="-10" />
     <option name="width" value="1390" />
-    <option name="height" value="734" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,6 +112,16 @@
             <path>
               <item name="Tema 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tema 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tema 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tema 2" type="462c0819:PsiDirectoryNode" />
+              <item name="Geolocalizacion js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tema 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tema 2" type="462c0819:PsiDirectoryNode" />
+              <item name="Tema 3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,18 +172,20 @@
       <workItem from="1522925873830" duration="599000" />
       <workItem from="1522951959273" duration="284000" />
       <workItem from="1522952270601" duration="76000" />
-      <workItem from="1522952570649" duration="2963000" />
+      <workItem from="1522952570649" duration="3615000" />
+      <workItem from="1522997648529" duration="53000" />
+      <workItem from="1523428428856" duration="1478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9394000" />
+    <option name="totallyTimeSpent" value="11577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="58" y="-7" width="1486" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13401507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13315217" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -194,34 +216,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
     <entry file="file://$PROJECT_DIR$/WS1-3y4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -229,13 +227,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
     <entry file="file://$PROJECT_DIR$/WS1-3y4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -243,13 +235,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
     <entry file="file://$PROJECT_DIR$/WS1-3y4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -357,20 +343,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html">
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js1.html" />
+    <entry file="file://$PROJECT_DIR$/Audio y video js/prueba.html" />
+    <entry file="file://$PROJECT_DIR$/Geolocalizacion js/geolocation_js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="595">
+          <caret line="104" column="47" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audio y video js/audioyvideojs.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audio y video js/prueba.html">
+    <entry file="file://$PROJECT_DIR$/Tema 3/WS1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tema 3/WS1-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tema 3/WS1-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tema 3/R#1--4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>

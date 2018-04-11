@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 3 WS1--3</title>
+
+    <script>
+        function dado() {
+
+            var numero;
+            var cont1 = 0;
+            var cont2 = 0;
+            var cont3 = 0;
+            var cont4 = 0;
+            var cont5 = 0;
+            var cont6 = 0;
+
+            for (var i = 0; i < 6000; i++) {
+                numero = Math.floor((Math.random() * 6) + 1);
+                if (numero === 1) {
+                    cont1++;
+                }
+                if (numero === 2) {
+                    cont2++;
+                }
+                if (numero === 3) {
+                    cont3++;
+                }
+                if (numero === 4) {
+                    cont4++;
+                }
+                if (numero === 5) {
+                    cont5++;
+                }
+                if (numero === 6) {
+                    cont6++;
+                }
+            }
+            console.log("El numero 1 ha salido " + cont1 + " veces.");
+            console.log("El numero 2 ha salido " + cont2 + " veces.");
+            console.log("El numero 3 ha salido " + cont3 + " veces.");
+            console.log("El numero 4 ha salido " + cont4 + " veces.");
+            console.log("El numero 5 ha salido " + cont5 + " veces.");
+            console.log("El numero 6 ha salido " + cont6 + " veces.");
+        }
+    </script>
+
+
+</head>
+<body>
+Se harán 6000 tiradas y se mostraran los resultados sobre cuantas veces ha salido cada numero por consola.
+<input type="button" onclick="dado()" value="Tira el dado 6000 veces!!">
+</body>
+</html>
