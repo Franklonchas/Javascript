@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<div align="left">
+    Agenda 2018/2019:
+    <br><br>
+    Nombre: <input type="text" placeholder="Francisco Javier" value="" id="nombre">
+    Direccion: <input type="text" placeholder="Sánchez de la Torre" value="" id="direccion">
+    Telefono: <input type="number" placeholder="+34666666666" value="" id="telefono">
+    Email: <input type="text" placeholder="ejemplo@DAW.com" value="" id="email">
+    <input type="button" onclick="añadirInterfaz()" value="Añadir a la agenda">
+
+</div>
+</body>
+<script>
+
+
+    class Contacto {
+        constructor(nom, dir, tlf, mail) {
+            this.nombre = nom;
+            this.direccion = dir;
+            this.telefono = tlf;
+            this.email = mail;
+        }
+    }
+
+    class Agenda {
+        constructor() {
+            this.listaContactos = new Array();
+        }
+
+        introducirContacto(nom, dir, tlf, mail) {
+            let a = new Contacto(nom, dir, tlf, mail);
+            this.listaContactos.push(a);
+        }
+
+        mostrarContacto(nom) {
+            for (var i = 0; i.length - 1; i++) {
+                if (this.nombre === nom) {
+                    return Contacto;
+                }
+            }
+        }
+
+        mostrarTodos() {
+            var a = this.listaContactos.sort();
+            console.log(a);
+        }
+
+        borrarContacto(nom) {
+            for (var i = 0; i.length - 1; i++) {
+                if (this.nombre === nom) {
+                    i.delete();
+                }
+            }
+        }
+    }
+    var a = new Agenda();
+
+    function añadirInterfaz() {
+        var nombre = document.getElementById("nombre").value;
+        var direccion = document.getElementById("direccion").value;
+        var telefono = document.getElementById("telefono").value;
+        var email = document.getElementById("email").value;
+
+        a.introducirContacto(nombre,direccion,telefono,email);
+    }
+
+    //var c = new Contacto("Francisco", "IES Ayala", "555555555", "fjsancheztrabajos@gmail.com");
+    a.introducirContacto("Sergio Suarez", "IES Ayala", "666666666", "sergio@suarez.com")
+    //a.mostrarTodos(nom);
+
+
+</script>
+</html>
