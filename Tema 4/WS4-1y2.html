@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        window.onload = function () {
+            init();
+            if (document.cookie !== null) {
+                document.getElementById("cookie").style.visibility = "hidden";
+                document.getElementById("pimpam").style.visibility = "hidden";
+            } else {
+                document.getElementById("cookie").style.visibility = "visible";
+                document.getElementById("pimpam").style.visibility = "visible";
+            }
+        };
+    </script>
+
 </head>
 <body>
-
+<input type="text" id="cookie">
+<input type="submit" id="pimpam" onclick="galletas()">
+<input type="button" value="cerrar sesion" onclick="byebye()">
 </body>
+
+<script>
+    let x;
+
+    function galletas() {
+        x = document.getElementById("cookie").value;
+        if (x !== "") {
+            document.cookie = x;
+            alert("Hola " + x + "!!");
+            document.getElementById("cookie").style.visibility = "hidden";
+            document.getElementById("pimpam").style.visibility = "hidden";
+        } else {
+            alert("No has introducido nada!!");
+        }
+    }
+
+    function byebye() {
+        if (document.cookie !== null) {
+            document.cookie = null;
+            alert("Hasta luego!!");
+        }else{
+            alert("No hay ninguna cookie que borrar");
+        }
+    }
+
+</script>
+
 </html>
