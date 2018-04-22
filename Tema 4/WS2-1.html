@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="marcobotones">
+    <input type="button" value="Tema Normal" onclick="cssNormal()">
+    <input type="button" value="Tema Minimalista" onclick="cssMinimalista()">
+</div>
+<div>
+    <div id="lol"></div>
+    <div id="mvr">
+        <p>Se trata de la misma página con 2 estilos diferentes (tema normal y tema minimalista).
+            Haciendo sólo uso de JavaScript consigue que se pueda cambiar el estilo (pulsando los
+            enlaces de la parte superior) para que quede tal cual puedes ver. Deberás hacerlo con dos
+            versiones:</p>
+        <p>a) Modificando el estilo desde JavaScript (las hojas de estilo no estan creadas, sino
+            que se establece mediante atributos del objeto style).</p>
+        <p id="visible">b) Creando dos hojas de estilo diferentes que se carguen dinámicamente según la
+            opción pulsada.</p>
+        <p id="normal"></p>
+        <p id="marco">ESTO ESTARA EN UN MARCO SOLO EN EL TEMA NORMAL</p>
+    </div>
+</div>
+</body>
+
+<script>
+    function cssNormal() {
+        document.body.style.backgroundColor = '#f7f37e';
+        document.getElementById("lol").style.backgroundColor = "#19B2E5";
+        document.getElementById("lol").style.cssFloat = "left";
+        document.getElementById("lol").style.width = "90px";
+        document.getElementById("lol").style.height = "1000px";
+        document.getElementById("marco").style.border = "thick solid black";
+        document.getElementById("marco").style.paddingLeft = "900px";
+        document.getElementById("marco").style.paddingLeft = "90px";
+        document.getElementById("visible").style.fontWeight = "900";
+        document.getElementById("visible").style.visibility = "visible";
+        document.getElementById("marco").style.backgroundColor = "yellow";
+
+        document.getElementById("marcobotones").style.border = "2px solid black";
+        document.getElementById("marcobotones").style.paddingBottom = "10px";
+        document.getElementById("marcobotones").style.paddingTop = "10px";
+        document.getElementById("marcobotones").style.backgroundColor = "#a5ffe5";
+    }
+
+
+    function cssMinimalista() {
+        document.body.style.backgroundColor = 'white';
+        document.getElementById("visible").style.visibility = "hidden";
+        document.getElementById("lol").style.backgroundColor = "white";
+        document.getElementById("lol").style.width = "0px";
+        document.getElementById("lol").style.height = "0px";
+        document.getElementById("marco").style.backgroundColor = "white";
+        document.getElementById("marco").style.border = "0px";
+
+        document.getElementById("marcobotones").style.border = "0px";
+        document.getElementById("marcobotones").style.paddingBottom = "10px";
+        document.getElementById("marcobotones").style.paddingTop = "10px";
+        document.getElementById("marcobotones").style.backgroundColor = "white";
+        document.getElementById("marco").style.paddingLeft = "0px";
+        document.getElementById("marco").style.paddingLeft = "0px";
+    }
+
+</script>
+
+</html>

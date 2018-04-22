@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+    function ShowHide(theDiv, how) {
+        document.getElementById(theDiv).style.display = how;
+    }
+</script>
+
+<body>
+
+<div id="anombre" style="display:none">Intoduce tu nombre.</div>
+<div id="aapellidos" style="display:none">Introduce tus apellidos.</div>
+<div id="adni" style="display:none">Pon tu DNI.</div>
+<div id="atelefono" style="display:none">Pon tu telefono sin prefijos.</div>
+<div id="acorreo" style="display:none">Pon tu correo electronico.</div>
+<div id="ausuario" style="display:none">Pon tu nombre de usuario. Debe contener al menos 8 caracteres.</div>
+
+<hr>
+
+
+<form>
+
+    Nombre: <input type="text" name="nombre" id="nombre" onfocus="ShowHide('anombre','block')"
+                   onblur="ShowHide('anombre','none')"
+                   pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+                   required/>
+    Apellidos: <input type="text" name="apellidos" id="apellidos" onfocus="ShowHide('aapellidos','block')"
+                      onblur="ShowHide('aapellidos','none')"
+                      pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+                      required/>
+    DNI: <input type="text" name="dni" id="dni" onfocus="ShowHide('adni','block')" onblur="ShowHide('adni','none')"
+                pattern="^([0-9]+[A-Z]){10}$" required/>
+    Teléfono: <input type="text" name="telefono" id="telefono" onfocus="ShowHide('atelefono','block')"
+                     onblur="ShowHide('atelefono','none')" pattern="^([0-9]){9}$" required/>
+    Email: <input type="email" name="correo" id="correo" onfocus="ShowHide('acorreo','block')"
+                  onblur="ShowHide('acorreo','none')"
+                  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+    Usuario: <input type="text" name="usuario" id="usuario" onfocus="ShowHide('ausuario','block')"
+                    onblur="ShowHide('ausuario','none')" pattern="^([a-z]+[0-9]{0,2}){8,12}$" required/>
+    <input type="submit" value="Enviar" onclick="enviar()">
+
+</form>
+</body>
+
+<script>
+
+    function enviar() {
+        let x1 = document.getElementById("nombre").value;
+        let x2 = document.getElementById("apellidos").value;
+        let x3 = document.getElementById("dni").value;
+        let x4 = document.getElementById("telefono").value;
+        let x5 = document.getElementById("correo").value;
+        let x6 = document.getElementById("usuario").value;
+
+        if (x1 !== "" && x2 !== "" && x3 !== "" && x4 !== "" && x5 !== "" && x6 !== "") {
+            alert("¡¡¡Tu mensaje ha sido mandado!!!");
+            document.getElementById("nombre").value = "";
+            document.getElementById("apellidos").value = "";
+            document.getElementById("dni").value = "";
+            document.getElementById("telefono").value = "";
+            document.getElementById("correo").value = "";
+            document.getElementById("usuario").value = "";
+
+        } else
+            alert("Comprueba bien los datos introducidos");
+    }
+
+</script>
+
+</html>

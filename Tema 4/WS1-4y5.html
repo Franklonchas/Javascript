@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            height: 100vh;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div onmousemove="colorear(event)" onmousedown="borrarRow(event)">
+    <div id="tabla"></div>
+</div>
+
+</body>
+
+<script>
+    var tabla = "<table>";
+    for (var i = 0; i < 100; i++) {
+        tabla += "<tr>";
+        for (var j = 0; j < 100; j++)
+            tabla += "<td></td>"
+        tabla += "</tr>"
+    }
+    tabla += "</table>"
+    document.getElementById("tabla").innerHTML = tabla;
+</script>
+
+<script>
+
+    let z;
+
+    function colorear(e) {
+        if (event.ctrlKey) {
+            var x = e.target;
+            x.style.backgroundColor = "#42b3f4";
+        }
+        if (event.shiftKey) {
+            var y = e.target;
+            y.style.backgroundColor = "#f46542";
+        }
+    }
+
+    function borrarRow(e) {
+        if (event.buttons === 2) {
+            z = e.target;
+            z.parentNode.parentNode.removeChild(z.parentNode);
+        }
+    }
+
+</script>
+
+
+</html>

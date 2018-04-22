@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function ShowHide(theDiv, how) {
+            document.getElementById(theDiv).style.display = how;
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="nombre" style="display:none">Intoduce tu nombre.</div>
+<div id="correo" style="display:none">Introduce tu email.</div>
+<div id="comentario" style="display:none">Pon tu comentario.</div>
+
+<hr>
+<form>
+    Nombre: <input type="text" id="fnombre" onfocus="ShowHide('nombre','block')" onblur="ShowHide('nombre','none')">
+    Email: <input type="text" id="fcorreo" onfocus="ShowHide('correo','block')" onblur="ShowHide('correo','none')">
+    Comentario: <input type="text" id="fcomentario" onfocus="ShowHide('comentario','block')"
+                       onblur="ShowHide('comentario','none')">
+
+    <input type="button" value="Enviar" onclick="enviado()">
+    <input type="button" value="Resetear">
+</form>
+
+<script>
+    function enviado() {
+        let x = document.getElementById("fnombre").value;
+        let y = document.getElementById("fcorreo").value;
+        let z = document.getElementById("fcomentario").value;
+
+        if (x !== "" && y !== "" && z !== "") {
+            alert("¡¡¡Tu mensaje ha sido mandado!!!");
+            document.getElementById("fnombre").value = "";
+            document.getElementById("fcorreo").value = "";
+            document.getElementById("fcomentario").value = "";
+
+        } else
+            alert("Debes de rellenar todos los campos antes");
+    }
+</script>
+
+</body>
+</html>
