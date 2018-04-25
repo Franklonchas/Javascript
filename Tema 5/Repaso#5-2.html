@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+<p>Escibe la posicion donde insetar una fila vacia en la tabla: <input type="text" id="caja"> <input type="button"
+                                                                                                    id="boton"
+                                                                                                    value="Pulsa!!"
+                                                                                                    onclick="añadirFilas()">
+</p>
+<table id="tabla" style="width:100%">
+    <tr>
+        <th>Nomnbre</th>
+        <th>Apellidos</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Francisco Javier</td>
+        <td>Sánchez de la Torre</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Sergio</td>
+        <td>Suárez Garzon</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Miguel</td>
+        <td>Torres de la Fuerte</td>
+        <td>288</td>
+    </tr>
+    <tr>
+        <td>Raul</td>
+        <td>Ruiz Juarez</td>
+        <td>20</td>
+    </tr>
+</table>
+</body>
+<script>
+    function añadirFilas() {
+        let posicion = parseInt(document.getElementById("caja").value);
+        var table = document.getElementById("tabla");
+        var row = table.insertRow(posicion);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+    }
+</script>
+</html>

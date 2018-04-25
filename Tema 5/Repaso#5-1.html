@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="caja">
+<input type="button" id="boton" value="Pulsa!" onclick="escribir()">
+<ul id="lista">
+
+</ul>
+</body>
+
+<script>
+
+    function escribir() {
+        let node = document.createElement("li");
+        let textnode = document.createTextNode(document.getElementById("caja").value);
+        node.appendChild(textnode);
+        document.getElementById("lista").appendChild(node);
+    }
+
+</script>
+
+</html>
