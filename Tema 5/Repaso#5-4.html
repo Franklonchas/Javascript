@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+
+<script>
+    function dropdownList(opcion) {
+        let sel = document.getElementById("SELECT");
+        if (sel === null) {
+            sel = document.createElement("SELECT");
+            let opt = document.createElement("OPTION");
+            let t = document.createTextNode(opcion);
+            opt.appendChild(t);
+            sel.appendChild(opt);
+            document.body.appendChild(sel);
+        } else {
+            let opt = document.createElement("OPTION");
+            let t = document.createTextNode(opcion);
+            opt.appendChild(t);
+            sel.appendChild(opt);
+            document.body.appendChild(sel);
+        }
+    }
+</script>
+
+</html>

@@ -14,8 +14,8 @@
 <body>
 <p>Escibe la posicion de una columna que ya exita: <input type="text" id="caja"></p>
 <p>Escibe la posicion de una fila que ya exita: <input type="text" id="caja2"></p>
-<p>Escibe lo que quieres cambiar: <input type="text" id="cajatexto"></p>
-<input type="button" id="boton" value="Pulsa!!" onclick="modificarFilas()">
+<p>Escibe lo que quieres cambiar: <input type="text" id="caja3"></p>
+<input type="button" id="boton" value="Pulsa!!" onclick="modificarFilasInput()">
 
 
 <table id="tabla" style="width:100%">
@@ -48,16 +48,18 @@
 </body>
 
 <script>
-    function modificarFilas() {
+    function modificarFilas(fila, columna, contenido) {
+        let x = document.getElementById("tabla").rows[fila].cells;
+        x[columna].innerHTML = contenido;
+    }
+
+    function modificarFilasInput() {
         let columna = parseInt(document.getElementById("caja").value);
         let fila = parseInt(document.getElementById("caja2").value);
+        let contenido = document.getElementById("caja").value;
 
-        for (let i = 0; i < columna; i++) {
-            if (i === columna) {
-                let x = document.getElementById("tabla").rows[fila].cells;
-                x[0].innerHTML = document.getElementById("caja3").value;
-            }
-        }
+        let x = document.getElementById("tabla").rows[fila].cells;
+        x[columna].innerHTML = contenido;
     }
 </script>
 
