@@ -9,7 +9,10 @@
 
 <script>
     function dropdownList(opcion) {
-        let sel = document.getElementById("SELECT");
+        let sel = document.createElement("SELECT", {
+            "id": "lol",
+        });
+
         if (sel === null) {
             sel = document.createElement("SELECT");
             let opt = document.createElement("OPTION");
@@ -23,6 +26,26 @@
             opt.appendChild(t);
             sel.appendChild(opt);
             document.body.appendChild(sel);
+        }
+    }
+
+    function dropOrButton(opcion, param) {
+        let drop;
+
+        if (param === 0) {
+            drop = document.createElement("SELECT");
+            let opt = document.createElement("OPTION");
+            let t = document.createTextNode(opcion);
+            opt.appendChild(t);
+            drop.appendChild(opt);
+            document.body.appendChild(drop);
+        } else {
+            if (param === 1) {
+                let x = document.createElement("INPUT");
+                x.setAttribute("type", "radio");
+                x.value =opcion;
+                document.body.appendChild(x);
+            }
         }
     }
 </script>
