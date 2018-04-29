@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="contador"></div>
+<input type="button" id="boton" value="Incrementa" onclick="incrementar()">
+</body>
+
+<script>
+    let contador = 0;
+
+    function incrementar() {
+        contador++;
+        document.getElementById("contador").innerHTML = contador;
+    }
+</script>
+
+
+</html>
