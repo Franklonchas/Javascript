@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="user" onblur="loadDoc()">
+<p id="tip"></p>
+</body>
+
+<script>
+
+    function loadDoc() {
+        let req;
+        let xhttp = new XMLHttpRequest();
+        let url = "username.txt";
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                req = this.responseText;
+                console.log(req);
+                let introducido = document.getElementById("user").value;
+                let arrayUsername = this.responseText.split("&");
+                for (let i = 0; i < arrayUsername.length; i++) {
+                    if (introducido.length < 3) {
+                        document.getElementById("tip").value = "El usuario introducido es demasiado pequeño"
+                    } else {
+                        if (introducido == arrayUsername[i]) {
+                            document.getElementById("tip").value = "El usuario introducido ya existe"
+                        } else {
+                            if (introducido != arrayUsername[i]) {
+                                document.getElementById("tip").value = "El usuario introducido no esta registrado"
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+
+</script>
+</html>
