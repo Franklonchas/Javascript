@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="cp">
+<input type="submit" value="Buscar" onclick="loadDoc()">
+</body>
+
+<script>
+    function loadDoc() {
+        let req;
+        let xhttp = new XMLHttpRequest();
+        let valor = document.getElementById("cp").value;
+        var valor2 = document.getElementById("cp").value.substring(0, 2);
+
+        switch (valor2) {
+            case "21":
+                var documento = "huelva";
+                break;
+            case "41":
+                var documento = "sevilla";
+                break;
+            case "11":
+                var documento = "cadiz";
+                break;
+            case "29":
+                var documento = "malaga";
+                break;
+            case "23":
+                var documento = "jaen";
+                break;
+            case "14":
+                var documento = "cordoba";
+                break;
+            case "18":
+                var documento = "granada";
+                break;
+            case "04":
+                var documento = "almeria";
+                break;
+        }
+
+        let url = documento + ".txt";
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                req = this.responseText;
+                console.log(req);
+
+                let dropSecundario = document.createElement("SELECT");
+                dropSecundario.setAttribute("id", "municipios");
+                document.body.appendChild(dropSecundario);
+
+                let primerArray = this.responseText.split("&");
+                let datosPorFila;
+                for (let i = 0; i < primerArray.length; i++) {
+                    datosPorFila = primerArray[i].split(":");
+                    if (valor == datosPorFila[0]) {
+                        let x = document.getElementById("municipios");
+                        let option = document.createElement("option");
+                        option.text = datosPorFila[1];
+                        x.add(option);
+                    }
+                }
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+</script>
+
+</html>

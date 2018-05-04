@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script>
+
+    var data = null;
+
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+            console.log(this.responseText);
+        }
+    });
+
+    xhr.open("GET", "https://opendata.aemet.es/opendata/api/valores/climatologicos/inventarioestaciones/todasestaciones/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmanNhbmNoZXp0cmFiYWpvc0BnbWFpbC5jb20iLCJqdGkiOiI4MDFmODA2OS0xNjIwLTQxOWItOWY5Yy1kMjg2OThkZTg3MjciLCJpc3MiOiJBRU1FVCIsImlhdCI6MTUyNTQyODU4NywidXNlcklkIjoiODAxZjgwNjktMTYyMC00MTliLTlmOWMtZDI4Njk4ZGU4NzI3Iiwicm9sZSI6IiJ9.9dWaw1FDeIfpVZvxXZ2fgGxlMEjk2IIVCrjg3rbola0");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.send(data);
+
+
+</script>
+
+</html>
