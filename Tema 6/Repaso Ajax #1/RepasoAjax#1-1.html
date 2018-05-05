@@ -12,29 +12,29 @@
 <script>
 
     function loadDoc() {
+        let existe = false;
         let req;
         let xhttp = new XMLHttpRequest();
-        let url = "username.txt";
+        let url = "username";
+        let tip = document.getElementById('tip');
         xhttp.onreadystatechange = function () {
+
             if (this.readyState == 4 && this.status == 200) {
                 req = this.responseText;
-                console.log(req);
                 let introducido = document.getElementById("user").value;
                 let arrayUsername = this.responseText.split("&");
+
                 for (let i = 0; i < arrayUsername.length; i++) {
                     if (introducido.length < 3) {
-                        document.getElementById("tip").value = "El usuario introducido es demasiado pequeño"
-                    } else {
-                        if (introducido == arrayUsername[i]) {
-                            document.getElementById("tip").value = "El usuario introducido ya existe"
-                        } else {
-                            if (introducido != arrayUsername[i]) {
-                                document.getElementById("tip").value = "El usuario introducido no esta registrado"
-                            }
-                        }
+                        tip.innerHTML = "El usuario introducido es demasiado pequeño"
 
+                    } else if (!existe && introducido == arrayUsername[i]) {
+                        existe = true;
+                        tip.innerHTML = "El usuario introducido ya existe"
+
+                    } else if (!existe) {
+                        tip.innerHTML = "El usuario introducido no esta registrado"
                     }
-
                 }
             }
         };
