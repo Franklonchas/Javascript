@@ -30,16 +30,44 @@
 
 </head>
 <body>
-<div id="id1" style="float: left" onmouseover="loadDoc()"></div>
-<div id="id2" style="float: right" onmouseover="loadDoc()"></div>
-<div id="id3" style="float: left" onmouseover="loadDoc()"></div>
-<div id="id4" style="float: right" onmouseover="loadDoc()"></div>
+<div id="id1" style="float: left"></div>
+<div id="id2" style="float: right"></div>
+<div id="id3" style="float: left"></div>
+<div id="id4" style="float: right"></div>
 </body>
 
 <script>
-    function loadDoc() {
-        
 
+    document.getElementById("id1").onmouseover = function () {
+        loadDoc()
+    };
+    document.getElementById("id2").onmouseover = function () {
+        loadDoc()
+    };
+    document.getElementById("id3").onmouseover = function () {
+        loadDoc()
+    };
+    document.getElementById("id4").onmouseover = function () {
+        loadDoc()
+    };
+
+
+    function loadDoc() {
+        /*El resultado se vera por consola*/
+                
+        let req;
+        let xhttp = new XMLHttpRequest();
+        let url = "peticionDiv.txt";
+
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                req = this.responseText;
+                console.log(req);
+            }
+        };
+
+        xhttp.open("GET", url, true);
+        xhttp.send();
     }
 
 </script>
