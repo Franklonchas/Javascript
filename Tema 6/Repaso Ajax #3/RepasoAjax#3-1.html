@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="boton" value="Cargar" onclick="loadDoc()">
+<img width="200" id="gifCarga" style="display: none" src="cargando.gif"/>
+<p id="mostrar"></p>
+</body>
+
+<script>
+    function loadDoc() {
+        let req;
+        let xhttp = new XMLHttpRequest();
+        let url = "cargaAnimada.txt";
+        let p = document.getElementById('mostrar');
+        xhttp.onreadystatechange = function () {
+            document.getElementById("gifCarga").style.display = "block";
+            if (this.readyState == 4 && this.status == 200) {
+                req = this.responseText;
+                document.getElementById("gifCarga").style.display = "none";
+                p.innerHTML = req;
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+</script>
+</html>
